@@ -1,0 +1,5 @@
+__all__ = ['SEQ_LEN', 'N_FEATURES', 'LSTM_UNITS']
+
+SEQ_LEN = 5
+N_FEATURES = 6
+LSTM_UNITS = 24

@@ -1,5 +1,7 @@
-__all__ = ['SEQ_LEN', 'N_FEATURES', 'LSTM_UNITS']
+__all__ = ['SEQ_LEN', 'LSTM_UNITS', 'FEATURE_COLUMNS', 'TARGET_COLUMNS', 'BATCH_SIZE']
 
-SEQ_LEN = 5
-N_FEATURES = 6
-LSTM_UNITS = 24
+SEQ_LEN = 10
+LSTM_UNITS = 64
+FEATURE_COLUMNS = ['x', 'y', 'z']
+TARGET_COLUMNS = ['x_sim', 'y_sim', 'z_sim']
+BATCH_SIZE = 16

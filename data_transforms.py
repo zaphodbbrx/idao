@@ -1,5 +1,6 @@
 import torch
 
+
 __all__ = ['ToTensor', 'Preprocess']
 
 
@@ -16,4 +17,5 @@ class Preprocess:
         self.seq_len = seq_len
 
     def __call__(self, sample):
-        return sample.view(self.seq_len, -1, self.n_features)
+        return sample.view(self.seq_len, -1, self.n_features).float()
+

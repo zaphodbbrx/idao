@@ -17,5 +17,5 @@ class Preprocess:
         self.seq_len = seq_len
 
     def __call__(self, sample):
-        return sample.view(self.seq_len, -1, self.n_features).float()
+        return sample.permute(1, 0, 2).float()
 
